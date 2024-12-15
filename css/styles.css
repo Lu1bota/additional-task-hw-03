@@ -1,20 +1,90 @@
+/* GLOBAL SETINGS */
+
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: #fafafa;
+}
+
+img {
+    display: block;
 }
 
 a {
-text-decoration: none;
+    text-decoration: none;
 }
 
-ul,ol {
-list-style-type: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1168px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    1168px
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
 }
 
 button {
     cursor: pointer;
 }
 
-.header-nav {}
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* HEADER */
+
+.header {
+    
+}
+
+.header-container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; */
+}
+
+/* .header-container-list {
+    display: flex;
+} */
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
 
 .logo {
     font-weight: 700;
@@ -22,6 +92,7 @@ button {
     line-height: 1.11;
     letter-spacing: -0.03em;
     color: #111;
+    padding-top: 28px;
 }
 
 .logo-italic {
@@ -33,7 +104,12 @@ button {
     color: #111;
 }
 
-.header-list {}
+.header-list {
+    display: flex;
+    gap: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .header-list-item {}
 
@@ -64,20 +140,59 @@ button {
     color: #111;
 }
 
-/* .address-list-item-link:hover {
-    color: #FD9222;
-} */
+/* START PAGE */
+
+.start-page-container {
+    width: 1200px;
+    background-color: #1e1823;
+    border-radius: 30px;
+}
 
 .start-page {
-    background-color: rgba(17, 17, 17, 0.6);
+    padding-top: 0;
 }
 
 .start-page-title {
     font-weight: 500;
     font-size: 28px;
-    line-height: 1.21;
+    line-height: 1.21429;
     letter-spacing: -0.03em;
     color: #fff;
+    max-width: 484px;
+    padding-top: 365px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    margin-left: 72px;
+}
+
+.start-page-button-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    gap: 32px;
+    padding-bottom: 46px;
+
+    width: 1056px;
+    /* padding-bottom: 46px; */
+    /* height: 179px; */
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    /* gap: 585px; */
+
+    width: 1056px;
+    height: 45px;
+}
+
+.container-link-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .start-page-button {
@@ -85,13 +200,17 @@ button {
     font-weight: 600;
     font-size: 14px;
     color: #fff;
+    margin-right: 14px;
+    margin-left: 72px;
+    max-width: 148px;
+    height: 45px;
+    padding: 14px 40px;
+    border-radius: 100px;
 }
 
 .start-page-button:hover,
 .start-page-button:focus {
     background-color: #fcf1e0;
-    font-weight: 600;
-    font-size: 14px;
     color: #fd9222;
 }
 
@@ -99,6 +218,13 @@ button {
     font-weight: 600;
     font-size: 14px;
     color: #fff;
+
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 185px;
+    height: 45px;
+    text-align: center;
 }
 
 .start-page-link:hover,
@@ -112,6 +238,10 @@ button {
     line-height: 1.29;
     letter-spacing: -0.03em;
     color: #fff;
+    display: flex;
+    align-items: flex-start;
+    width: 86px;
+    /* flex-grow: 1; */
 }
 
 .start-page-link-scroll:hover,
@@ -119,8 +249,17 @@ button {
     color: #fd9222;
 }
 
+/* BENEFITS */
+
 .benefits {
     background-color: #1e1823;
+}
+
+.container-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .benefits-title {
@@ -133,15 +272,23 @@ button {
     color: #fff;
 }
 
-.benefits-list {}
+.benefits-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
 
-.benefits-list-item {}
+.benefits-list-item {
+    width: 308px;
+}
 
 .benefits-list-item-title {
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 0.01em;
     color: #fff;
+    padding-bottom: 18px;
 }
 
 .benefits-list-item-text {

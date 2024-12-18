@@ -394,41 +394,49 @@
       </section>
       <!-- ===== REVIEWS ===== -->
       <section class="reviews">
-        <div class="container">
+        <div class="container container-reviews">
           <h2 class="reviews-title" id="chocolate-is-loved">
             Chocolate <span class="reviews-title-black">is loved</span>
           </h2>
-          <ul class="reviews-list">
-            <li class="reviews-list-item">
-              <img
-                src="./images/victoria-dobrzhanska.jpg"
-                alt="victoria-dobrzhanska"
-              />
-              <h3 class="reviews-list-item-title">Victoria Dobrzhanska</h3>
-              <p class="reviews-list-item-text">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
-            </li>
-            <li class="reviews-list-item">
-              <img src="./images/nazar-babenko.jpg" alt="nazar-babenko" />
-              <h3 class="reviews-list-item-title">Nazar Babenko</h3>
-              <p class="reviews-list-item-text">
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
-            </li>
-            <li class="reviews-list-item">
-              <img src="./images/olena-kampusch.jpg" alt="olena-kampusch" />
-              <h3 class="reviews-list-item-title">Olena Kampusch</h3>
-              <p class="reviews-list-item-text">
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
-            </li>
-          </ul>
+          <div class="container-reviews-list">
+            <ul class="reviews-list">
+              <li class="reviews-list-item">
+                <div class="container-reviews-list-item">
+                  <img
+                    src="./images/victoria-dobrzhanska.jpg"
+                    alt="victoria-dobrzhanska"
+                  />
+                  <h3 class="reviews-list-item-title">Victoria Dobrzhanska</h3>
+                  <p class="reviews-list-item-text">
+                    I love this chocolate bar. Perfect combination of light
+                    crispy wafer, covered in a thin layer chocolate.
+                  </p>
+                </div>
+              </li>
+              <li class="reviews-list-item">
+                <div class="container-reviews-list-item">
+                  <img src="./images/nazar-babenko.jpg" alt="nazar-babenko" />
+                  <h3 class="reviews-list-item-title">Nazar Babenko</h3>
+                  <p class="reviews-list-item-text">
+                    This chocolate confection is a delight! A delight! The wafer
+                    is light and crisp, the hazelnut cream is smooth, and the
+                    chocolate is good.
+                  </p>
+                </div>
+              </li>
+              <li class="reviews-list-item">
+                <div class="container-reviews-list-item">
+                  <img src="./images/olena-kampusch.jpg" alt="olena-kampusch" />
+                  <h3 class="reviews-list-item-title">Olena Kampusch</h3>
+                  <p class="reviews-list-item-text">
+                    Chocolate is a family favourite treat. Love the delicious
+                    smooth chocolate and the creaminess inside. The wafer is
+                    soft but crunchy.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
           <button class="reviews-button" type="button">Leave a review</button>
         </div>
       </section>
@@ -437,13 +445,19 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
       <div class="container">
-        <h2 class="footer-title">
-          Chocolate
-          <span class="footer-title-white">a delicious cure for a bad day</span>
-        </h2>
-        <nav class="footer-nav">
-          <address class="footer-address">
-            Social networks
+        <div class="container-footer">
+          <div class="container-footer-title">
+            <h2 class="footer-title">
+              Chocolate
+              <span class="footer-title-white"
+                >a delicious cure for a bad day</span
+              >
+            </h2>
+          </div>
+          <div class="container-footer-nav">
+            <nav class="footer-nav">
+              <address class="footer-address">
+                <!-- Social networks
             <a
               class="footer-address-link"
               href="https://uk-ua.facebook.com/"
@@ -468,34 +482,39 @@
               target="_blank"
             >
               <img src="./images/twitter.jpg" alt="twitter logo" width="40" />
-            </a>
+            </a> -->
 
-            Contact us
-            <a class="footer-address-link-tel-email" href="tel:+380684439426"
-              >+380 (68) 443-94-26</a
-            ><br />
-            <a
-              class="footer-address-link-tel-email"
-              href="mailto:simplychoc@gmail.com"
-              >simplychoc@gmail.com</a
+                <p class="footer-address-text">Contact us</p>
+                <a
+                  class="footer-address-link-tel-email"
+                  href="tel:+380684439426"
+                  >+380 (68) 443-94-26</a
+                ><br />
+                <a
+                  class="footer-address-link-tel-email"
+                  href="mailto:simplychoc@gmail.com"
+                  >simplychoc@gmail.com</a
+                >
+              </address>
+            </nav>
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a class="footer-list-item-link" href="./index.html">Home</a>
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-list-item-link" href="#how-its-made"
+              >How it’s made?</a
             >
-          </address>
-          <ul class="footer-list">
-            <li class="footer-list-item">
-              <a class="footer-list-item-link" href="./index.html">Home</a>
-            </li>
-            <li class="footer-list-item">
-              <a class="footer-list-item-link" href="#how-its-made"
-                >How it’s made?</a
-              >
-            </li>
-            <li class="footer-list-item">
-              <a class="footer-list-item-link" href="#chocolate-is-loved"
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-        </nav>
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-list-item-link" href="#chocolate-is-loved"
+              >Chocolate is loved</a
+            >
+          </li>
+        </ul>
+        <!-- </nav> -->
       </div>
     </footer>
   </body>

@@ -44,7 +44,6 @@ p {
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
-    1168px
 }
 
 ul,
@@ -561,6 +560,12 @@ section {
     padding-top: 0;
 }
 
+.container-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .reviews-title {
     font-weight: 600;
     font-size: 24px;
@@ -569,15 +574,38 @@ section {
     text-transform: uppercase;
     text-align: center;
     color: #fd9222;
+    margin-bottom: 50px;
 }
+
+.container-reviews-list {
+    
+}
+
+.container-reviews-list-item {}
 
 .reviews-title-black {
     color: #111;
 }
 
-.reviews-list {}
+.reviews-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 28px; */
+}
 
-.reviews-list-item {}
+.reviews-list-item {
+    /* flex: 1 1 calc(33.333% - 20px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-reviews-list-item img {
+    margin: 0 auto;
+}
 
 .reviews-list-item-title {
     font-weight: 600;
@@ -585,6 +613,7 @@ section {
     line-height: 1.33;
     text-align: center;
     color: #111;
+    margin-top: 18px;
 }
 
 .reviews-list-item-text {
@@ -594,12 +623,28 @@ section {
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
+    margin-top: 24px;
+    margin-right: 52px;
+    width: 312px;
 }
 
 .reviews-button {
     font-weight: 600;
     font-size: 18px;
     color: #111;
+    margin-top: 20px;
+
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 222px;
+    height: 50px;
+}
+
+.reviews-button:hover,
+.reviews-button:focus {
+    background-color: #fd9222;
+    color: #fff;
 }
 
 /* FOOTER */
@@ -608,12 +653,27 @@ section {
     background-color: #1e1823;
 }
 
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer-title {
+
+}
+
+.container-footer-nav {
+
+}
+
 .footer-title {
     font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.02em;
     color: #fd9222;
+    padding-top: 50px;
+    width: 300px;
 }
 
 .footer-title-white {
@@ -626,8 +686,17 @@ section {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
-    text-align: center;
+    /* text-align: center; */
     color: #fff;
+    padding-top: 50px;
+}
+
+.footer-address-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    color: #fff;
+    margin-bottom: 14px;
 }
 
 .footer-address-link {

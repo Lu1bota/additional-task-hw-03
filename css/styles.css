@@ -54,6 +54,14 @@ ol {
     list-style-type: none;
 }
 
+address {
+    font-style: normal;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
 button {
     cursor: pointer;
 }
@@ -451,6 +459,10 @@ section {
     flex-direction: column;
     justify-content: center;
     margin-left: 52px;
+
+    width: 516px;
+    background-color: #fff;
+    border-radius: 15px;
 }
 
 .made-title-list {
@@ -581,7 +593,9 @@ section {
     
 }
 
-.container-reviews-list-item {}
+.container-reviews-list-item {
+    
+}
 
 .reviews-title-black {
     color: #111;
@@ -591,20 +605,34 @@ section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* gap: 28px; */
+    gap: 28px;
+    margin-top: 50px;
 }
 
 .reviews-list-item {
-    /* flex: 1 1 calc(33.333% - 20px); */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
+
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    width: 360px;
+    height: 200px;
+
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+    background-color: #fff;
+
+    position: relative;
 }
 
-.container-reviews-list-item img {
-    margin: 0 auto;
+.reviews-list-item img {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+
 }
 
 .reviews-list-item-title {
@@ -614,6 +642,7 @@ section {
     text-align: center;
     color: #111;
     margin-top: 18px;
+    margin-bottom: 24px;
 }
 
 .reviews-list-item-text {
@@ -623,8 +652,6 @@ section {
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
-    margin-top: 24px;
-    margin-right: 52px;
     width: 312px;
 }
 
@@ -656,6 +683,10 @@ section {
 .container-footer {
     display: flex;
     justify-content: space-between;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 50px; 
+    width: 1136px;
 }
 
 .container-footer-title {
@@ -717,7 +748,12 @@ section {
     color: #fd9222;
 }
 
-.footer-list {}
+.footer-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    padding-bottom: 86px;
+}
 
 .footer-list-item {}
 
